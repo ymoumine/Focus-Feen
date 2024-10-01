@@ -1,12 +1,30 @@
-# Getting Started with Create React App
+# Focus Feen
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A project made for [HacktheHill 2](https://devpost.com/software/focus-feen), a three day hackthon. The goal of this project is to help you master concentration by tracking your focused time and providing a score when distractions break your flow. It's designed to help users strengthen their focus skills in a fun and measurable way, turning you into a productivity superhero.
 
-## Available Scripts
+## What it does
+
+Focus Feen uses a camera-based neural network model to analyze head movements and determine whether the user is focused or distracted. It tracks focused time and provides real-time feedback when distractions are detected. Over time, users can improve their focus by engaging in uninterrupted work sessions.
+
+## How we built it
+
+- **Neural Network**: We used [Google's Teachable Machine](https://teachablemachine.withgoogle.com/) to train a model for head pose detection to predict focus or distraction.
+- **Frontend**: Developed with React, the user interface interacts with the model’s predictions to update a timer that tracks focused time. The interface was styled with tailwind CSS for a clean and intuitive user experience.
+
+## Try it out
+
+Clone the repository:
+
+### `git clone https://github.com/ymoumine/Focus-Feen.git`
+
+Go to project directory:
+
+### `cd Focus-Feen`
 
 In the project directory, you can run:
 
 ### `npm start`
+
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -14,57 +32,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+## Contributors
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Yassine Moumine](https://github.com/ymoumine)
+- [Kyle Yu](https://github.com/kyle-yu33)
+- [Mustafa Sarikaya](https://github.com/MustafaSarikaya)
+- [Alexandre M.](https://github.com/Syth-000)
 
-### `npm run build`
+## Acknowledgments
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Teachable Machine](https://teachablemachine.withgoogle.com/) for making neural network training accessible.
+- The [HacktheHill](https://2024.hackthehill.com/) hackathon organizers for inspiring us to create Focus Feen.
+  
